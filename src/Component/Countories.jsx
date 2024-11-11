@@ -22,6 +22,13 @@ export default function Countries() {
             <h3>All Countries : {countries.length}</h3>
 
             <h5>Favorit Country: {favcountry.length} </h5>
+            <ul>
+                {
+                    favcountry.map((country) => {
+                        return <a key={country.name.common}>{country.name.common}<br></br></a>
+                    })
+                }
+            </ul>
             <div className="countries">
                 {countries.map((country) => (
                     // console.log(country),
