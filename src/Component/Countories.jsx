@@ -32,7 +32,7 @@ export default function Countries() {
             <div className="countries">
                 {countries.map((country) => (
                     // console.log(country),
-                    <Country country={country} toglecoutry={toglecoutry}></Country>
+                    <Country key={country.cca3} country={country} toglecoutry={toglecoutry}></Country>
                 ))}
             </div>
         </>
